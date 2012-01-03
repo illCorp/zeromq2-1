@@ -146,12 +146,6 @@
 		E34E9C1E14B3A4C50035ED2F /* zmq.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E34E9C1B14B3A4C50035ED2F /* zmq.hpp */; };
 		E34E9C2214B3A4E70035ED2F /* xmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2014B3A4E70035ED2F /* xmlParser.cpp */; };
 		E34E9C2314B3A4E70035ED2F /* xmlParser.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E34E9C2114B3A4E70035ED2F /* xmlParser.hpp */; };
-		E34E9C2B14B3A5220035ED2F /* inproc_lat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2514B3A5220035ED2F /* inproc_lat.cpp */; };
-		E34E9C2C14B3A5220035ED2F /* inproc_thr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2614B3A5220035ED2F /* inproc_thr.cpp */; };
-		E34E9C2D14B3A5220035ED2F /* local_lat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2714B3A5220035ED2F /* local_lat.cpp */; };
-		E34E9C2E14B3A5220035ED2F /* local_thr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2814B3A5220035ED2F /* local_thr.cpp */; };
-		E34E9C2F14B3A5220035ED2F /* remote_lat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2914B3A5220035ED2F /* remote_lat.cpp */; };
-		E34E9C3014B3A5220035ED2F /* remote_thr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E34E9C2A14B3A5220035ED2F /* remote_thr.cpp */; };
 		E34E9C3214B3A5F20035ED2F /* platform.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E34E9C3114B3A5F20035ED2F /* platform.hpp */; };
 /* End PBXBuildFile section */
 
@@ -300,12 +294,6 @@
 		E34E9C1B14B3A4C50035ED2F /* zmq.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = zmq.hpp; path = ../../../../include/zmq.hpp; sourceTree = "<group>"; };
 		E34E9C2014B3A4E70035ED2F /* xmlParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = xmlParser.cpp; path = ../../../../foreign/xmlParser/xmlParser.cpp; sourceTree = "<group>"; };
 		E34E9C2114B3A4E70035ED2F /* xmlParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = xmlParser.hpp; path = ../../../../foreign/xmlParser/xmlParser.hpp; sourceTree = "<group>"; };
-		E34E9C2514B3A5220035ED2F /* inproc_lat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inproc_lat.cpp; path = ../../../../perf/inproc_lat.cpp; sourceTree = "<group>"; };
-		E34E9C2614B3A5220035ED2F /* inproc_thr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = inproc_thr.cpp; path = ../../../../perf/inproc_thr.cpp; sourceTree = "<group>"; };
-		E34E9C2714B3A5220035ED2F /* local_lat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = local_lat.cpp; path = ../../../../perf/local_lat.cpp; sourceTree = "<group>"; };
-		E34E9C2814B3A5220035ED2F /* local_thr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = local_thr.cpp; path = ../../../../perf/local_thr.cpp; sourceTree = "<group>"; };
-		E34E9C2914B3A5220035ED2F /* remote_lat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = remote_lat.cpp; path = ../../../../perf/remote_lat.cpp; sourceTree = "<group>"; };
-		E34E9C2A14B3A5220035ED2F /* remote_thr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = remote_thr.cpp; path = ../../../../perf/remote_thr.cpp; sourceTree = "<group>"; };
 		E34E9C3114B3A5F20035ED2F /* platform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = platform.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -349,7 +337,6 @@
 		E34E9B0214B3A4870035ED2F /* ZeroMQ-ios */ = {
 			isa = PBXGroup;
 			children = (
-				E34E9C2414B3A5150035ED2F /* perf */,
 				E34E9C1F14B3A4D60035ED2F /* xmlParser */,
 				E34E9C1814B3A4B80035ED2F /* headers */,
 				E34E9B0D14B3A4A30035ED2F /* src */,
@@ -527,19 +514,6 @@
 				E34E9C2114B3A4E70035ED2F /* xmlParser.hpp */,
 			);
 			name = xmlParser;
-			sourceTree = "<group>";
-		};
-		E34E9C2414B3A5150035ED2F /* perf */ = {
-			isa = PBXGroup;
-			children = (
-				E34E9C2514B3A5220035ED2F /* inproc_lat.cpp */,
-				E34E9C2614B3A5220035ED2F /* inproc_thr.cpp */,
-				E34E9C2714B3A5220035ED2F /* local_lat.cpp */,
-				E34E9C2814B3A5220035ED2F /* local_thr.cpp */,
-				E34E9C2914B3A5220035ED2F /* remote_lat.cpp */,
-				E34E9C2A14B3A5220035ED2F /* remote_thr.cpp */,
-			);
-			name = perf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -741,12 +715,6 @@
 				E34E9C1514B3A4B30035ED2F /* zmq_listener.cpp in Sources */,
 				E34E9C1714B3A4B30035ED2F /* zmq.cpp in Sources */,
 				E34E9C2214B3A4E70035ED2F /* xmlParser.cpp in Sources */,
-				E34E9C2B14B3A5220035ED2F /* inproc_lat.cpp in Sources */,
-				E34E9C2C14B3A5220035ED2F /* inproc_thr.cpp in Sources */,
-				E34E9C2D14B3A5220035ED2F /* local_lat.cpp in Sources */,
-				E34E9C2E14B3A5220035ED2F /* local_thr.cpp in Sources */,
-				E34E9C2F14B3A5220035ED2F /* remote_lat.cpp in Sources */,
-				E34E9C3014B3A5220035ED2F /* remote_thr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +808,7 @@
 				E34E9B0C14B3A4870035ED2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
